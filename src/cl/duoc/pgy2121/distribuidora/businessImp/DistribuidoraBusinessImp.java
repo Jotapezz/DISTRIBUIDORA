@@ -14,8 +14,10 @@ import cl.duoc.pgy2121.distribuidora.business.DistribuidoraBusiness;
 public class DistribuidoraBusinessImp implements DistribuidoraBusiness {
 
     @Override
-    public int ObtenerIva(int precio) {
-        return precio * (19/100);
+    public int ObtenerIva(double precio) {
+        double precioIva = precio * 0.19;
+        return (int) precioIva; 
+                
     }
 
     @Override

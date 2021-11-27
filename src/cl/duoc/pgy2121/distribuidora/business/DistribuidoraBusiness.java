@@ -10,7 +10,7 @@ package cl.duoc.pgy2121.distribuidora.business;
  * @author JP
  */
 public interface DistribuidoraBusiness {
-    public int ObtenerIva (int iva);
+    public int ObtenerIva (double iva);
     public int DctoVino (int dctoVino);
     public int DctoBebida (int dctoBebida);
     

@@ -68,6 +68,8 @@ public class Distribuidora {
                 System.out.println("1. Pisco\n2. Whisky");
                 int opcionLicor = s.nextInt();
                 
+                
+                
                 if (opcionLicor == 1){
                     Alcoholica pisco1 = new Alcoholica();
                     pisco1.nombre = "Uyuy";
@@ -93,6 +95,7 @@ public class Distribuidora {
             if (opcionBebida == 2){
                     System.out.println("1. Bebida\n2. Jugo");
                     int opcionGaseosa = s.nextInt();
+                    s.nextLine();
 
                     if (opcionGaseosa == 1){
                         NoAlcoholica bebida1 = new NoAlcoholica();
@@ -140,18 +143,18 @@ public class Distribuidora {
                     Alcoholica pisco1 = new Alcoholica ();
                     pisco1.contar(alcoholList);}   
 
-            }
+            
         if (opcion == 4){
-            System.out.println(alcoholList.size());
-            System.out.println(noAlcoholList.size());
             DistribuidoraBusinessImp ObtenerIva = new DistribuidoraBusinessImp();
-            for (Alcoholica pisco1 : alcoholList){                                                  
-                System.out.println(alcoholList.size());
-                System.out.println("IVA:\t" + ObtenerIva.ObtenerIva(1000));
-        }
+            List<Alcoholica> pisco1 = new ArrayList<Alcoholica>();
+            for (Alcoholica alcoholica : pisco1) {
+                System.out.println(pisco1.size());
+               /* System.out.println("IVA:\t" + ObtenerIva.ObtenerIva(pisco1.getPrecio()* alcoholList.size()) ) ;*/
+            }
+           
         }
     }
-    
+    }
 }
                 
         
